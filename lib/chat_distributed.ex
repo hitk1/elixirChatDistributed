@@ -1,4 +1,4 @@
-defmodule ChatDistributed.Application do
+defmodule ChatDistributed do
   @moduledoc false
 
   use Application
@@ -10,6 +10,5 @@ defmodule ChatDistributed.Application do
 
     opts = [strategy: :one_for_one, name: ChatDistributed.Supervisor]
     Supervisor.start_link(children, opts)
-    IO.puts("startou")
   end
 end
